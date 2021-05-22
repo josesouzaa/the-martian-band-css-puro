@@ -1,0 +1,473 @@
+body, h1, h2, h3, p, ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Menu */
+
+.menu {
+    background: #252525;
+}
+
+.menu-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.menu-container::after,  .menu-container::before{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.menu-logo {
+    float: left;
+}
+
+.menu-nav {
+    float: right;
+    margin-top: 15px;
+}
+
+.menu-nav ul li {
+    display: inline-block;
+}
+
+.menu-nav ul li a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+@media (max-width: 790px) {
+    .menu-container {
+        max-width: 790px;
+        margin: 0 auto;
+    }
+    .menu {
+        text-align: center;
+    }
+    .menu-logo {
+        float: none;
+        clear: both;
+    }
+    .menu-nav {
+        float: none;
+        clear: both;
+        margin-bottom: 20px;
+    }
+    .menu-nav ul li a {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 300px) {
+    .menu-container {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .menu {
+        text-align: center;
+    }
+    .menu-nav ul li a {
+        font-size: 0.8em;
+    }
+}
+
+/* Introdução */
+
+.intro {
+    background: url(../img/mars-intro.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 150px 0px;
+    text-align: center;
+}
+
+.intro h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.25em;
+}
+
+@media (max-width: 790px) {
+    .intro {
+        padding: 120px 0px;
+    }
+    .intro h1 {
+        font-size: 2em;
+    }
+}
+
+/* História */
+
+.historia {
+    text-align: center;
+    padding: 60px 0px;
+}
+
+.historia h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.historia p {
+    max-width: 460px;
+    margin: 0px auto 0px auto;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+@media (max-width: 300px) {
+    .historia p {
+        max-width: 300px;
+    }
+}
+
+/* Integrantes */
+
+.integrantes {
+    background: url(../img/mars-inte2.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 20px 0 0 0;
+}
+
+.integrantes-container {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.integrantes-container::after, .integrantes-container::before {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.integrante {
+    float: left;
+    max-width: 220px;
+    margin: 0px 10px;
+    padding-bottom: 60px;
+}
+
+.integrante img {
+    max-width: 220px;
+    border-radius: 50%;
+    border: #252525 solid;
+}
+
+.integrantes h2 {
+    color: white;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 10px 0px 30px 0px;
+}
+
+.integrante h3 {
+    color: white;
+    margin: 10px 0px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.integrante p {
+    color: white;
+    font-size: 0.8em;
+    line-height: 1.2em;
+    max-width: 220px;
+}
+
+@media (min-width: 650px)  and (max-width: 960px) {
+    .integrantes-container {
+        width: 480px;
+    }
+}
+
+@media (max-width: 649px) {
+    .integrantes-container {
+        max-width: 300px;
+    }
+    .integrante {
+        margin: none;
+        float: none;
+        clear: both;
+        margin: 0 auto;
+    }
+}
+
+/* Discos */
+
+.discos-container h2 {
+    text-align: center;
+    margin: 30px 0px 40px 0px;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.discos-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.discos-container::after, .discos-container::before {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.capa, .musics {
+    float: left;
+    margin: 0px 10px 20px 10px;
+    max-width: 460px;
+    height: 360px;
+}
+
+.musics h3 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.musics ol li {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+@media (min-width: 650px)  and (max-width: 960px) {
+    .discos-container {
+        max-width: 460px;
+    }
+    .capa, .musics {
+        float: none;
+        margin: 10px;
+    }
+    .musics {
+        height: auto;
+    }
+    .musics h3 {
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+    .musics ol li {
+        font-size: 1em;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .discos-container {
+        max-width: 300px;
+    }
+    .capa img {
+        max-width: 300px;
+    }
+    .capa, .musics {
+        float: none;
+        margin: 0px;
+    }
+    .musics, .capa {
+        height: auto;
+    }
+    .musics h3 {
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+    .musics ol li {
+        font-size: 1em;
+        margin: 10px 0;
+    }
+}
+
+/* Contato */
+
+.contato {
+    background: #A63838;
+    background-size: 100%;
+    padding-top: 10px;
+    margin-top: 30px;
+}
+
+.contato-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.contato-container::after, .contato-container::before {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.contato h2 {
+    color: white;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 10px 0px 30px 0px;
+    text-align: center;
+}
+
+.form {
+    float: left;
+    width: 460px;
+    margin: 0px 10px;
+}
+
+.outros {
+    float: left;
+    max-width: 460px;
+    margin: 0px 10px;
+}
+
+.form label, .form input {
+    display: block;
+}
+
+.form label {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    margin: 10px 0px;
+}
+
+.form input {
+    background: #838383;
+    border: black solid 3px;
+    width: 300px;
+}
+
+.form button {
+    background: black;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px 10px 5px 10px;
+    margin: 20px 0px;
+}
+
+.outros2 li {
+    display: block;
+    font-size: 1.2em;
+    margin: 10px 0px;
+    font-weight: bold;
+}
+
+.outros2 li:last-child {
+    margin-bottom: 40px;
+}
+
+.redes li {
+    display: inline-block;
+    margin: 0px 20px 0px 0px;
+    border: black solid 4px;
+}
+
+.outros h3 {
+    color: white;
+    font-size: 1.5em;
+    margin: 20px 0px;
+}
+
+.msg {
+    height: 100px;
+}
+
+@media (min-width: 660px)  and (max-width: 960px) {
+    .contato-container {
+        max-width: 650px;
+        margin: 0 auto;
+    }
+    .form, .outros {
+        width: 300px;
+    }
+    .form input {
+        width: 280px;
+    }
+}
+
+@media (max-width: 659px) {
+    .contato-container {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .redes {
+        margin-bottom: 20px;
+    }
+}
+
+/* Footer */
+
+.footer {
+    background: #66211b;
+    height: auto;
+}
+
+.footer-container {
+    max-width: 960px;
+    margin: 0 auto
+}
+
+.footer-container::after, .footer-container::before {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.footertext {
+    float: left;
+}
+
+.footertext p {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.footertext p, .footertext a {
+    color: white;
+}
+
+.footerimg {
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.footerimg img {
+    display: block;
+}
+
+@media (min-width: 660px)  and (max-width: 960px) {
+    .footertext, .footerimg {
+        float: none;
+        clear: both;
+        display: block;
+        margin: 10px auto;
+    }
+    .footer-container {
+        max-width: 300px;
+        margin: 0 auto
+    }
+}
+
+@media (max-width: 660px) {
+    .footertext, .footerimg {
+        float: none;
+        clear: both;
+        display: block;
+        margin: 10px auto;
+    }
+    .footer-container {
+        max-width: 300px;
+        margin: 0 auto
+    }
+}
