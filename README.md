@@ -1,4 +1,4 @@
-﻿# The Martian Band - CSS Puro
+﻿﻿# The Martian Band - CSS Puro
 
 Projeto pessoal realizado visando praticar os conhecimentos em HTML e CSS, utilizando o float para posicionar os elementos da página.
 
